@@ -33,14 +33,10 @@
       <div class="page-content">Pick a number between 1 and 6</div>
       <form>
         <div class="page-content-answer"></div>
-        <form action="answer.php" method="GET">
+        <form action="./answer.php" method="GET">
           <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="user-number"
-              step="0.01" />
-            <!-- mdl-textfield__label -->
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="user-number" />
             <label class="mdl-textfield__label" for="user-number">Number...</label>
-            <!-- class "mdl-textfield__error" -->
             <span class="mdl-textfield__error">Input is not a number.</span>
           </div>
           <br />
